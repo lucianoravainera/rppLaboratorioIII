@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./estiloEjercicio1.css"> <!--para llamar al css no uso script-->
+    <script type="text/javascript" src="./funcionesEjercicio1.js"></script>
+    <title>Primer Parcial Labo3 Ravainera Luciano</title>
+</head>
+<body>
+    <div class="divAbrir"><input type="button" class="botonAgregar" value="Alta" id="btnAbrir"></div>
+    <div class="container-spinner" id="container-spinner">
+        <img src="./cargando.gif" alt="" id="spinner">
+    </div>
+    <h1>Vehiculos:</h1>
+            
+
+            <div class="backdrop" id="backdrop">
+                <div class="container-modificar" id="container-modificar">
+        
+                    <form class="form-modificar">
+                        <h2>Alta de Vehiculo</h2>
+                <div class="divCerrar"><input type="button" class="botonEliminar" value="X" id="btnCerrar"></div>
+                <label for="marcaMod">Marca:</label><br>
+                <input type="text" name="marca" class="sinError" id="marcaMod"><br>
+                <label for="modeloMod">Modelo:</label><br>
+                <input type="text" name="modelo" class="sinError" id="modeloMod"><br>
+                <input type="text" name="id"  id="txtid" hidden><br>
+                <label for="anioMod">Año:</label>
+                <select id="anioMod" name="anio">
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+                <option value="2007">2007</option>
+                <option value="2008">2008</option>        
+                <option value="2009">2009</option>       
+                <option value="2010">2010</option>  
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>     
+                <option value="2020">2020</option></select><br>  
+                        
+                        <br>
+                        <div class="container-botones">
+                            <input type="button" class="botonEliminar"  value="Cancelar" id="btnCerrarMod" >
+                            <input type="button" class="botonModificar" value="Guardar" id="btnModificar" ><br><br>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <table id="tabla">
+                <thead>
+                    <th>ID</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Año</th>
+                </thead>
+                <tbody id="tCuerpo">
+                </tbody>
+            </table>
+
+
+</body>
+</html>
